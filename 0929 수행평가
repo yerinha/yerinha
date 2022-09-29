@@ -1,0 +1,196 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPiX1kc1e9VVJ0+UB+o2+DQ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/yerinha/yerinha/blob/main/0929%20%EC%88%98%ED%96%89%ED%8F%89%EA%B0%80\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "i9N5Y_iMR9V0",
+        "outputId": "bfedb9f8-542c-4f0c-f921-c75c13a47dff"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "가수 이름을 입력 : 프로미스나인\n",
+            "인나스미로프\n"
+          ]
+        }
+      ],
+      "source": [
+        "singer = input(\"가수 이름을 입력 : \")\n",
+        "singer_length = len(singer)\n",
+        "#print(singer_length)\n",
+        "r_singer= \"\"\n",
+        "while singer_length > 0 :\n",
+        "  r_singer = r_singer + singer[singer_length-1]\n",
+        "  singer_length = singer_length -1\n",
+        "print(r_singer)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "var1 = input(\"첫 번째 문자열 ==>\")\n",
+        "var2 = input(\"두 번째 문자열 ==>\")\n",
+        "\n",
+        "len1 = len(var1)\n",
+        "len2 = len(var2)\n",
+        "\n",
+        "diff = len1 - len2\n",
+        "\n",
+        "print(\"두 문자열의 길이 차이는\"), diff, \"입니다.\""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LB6XvmwwT3vy",
+        "outputId": "74bb37ba-fae6-4636-d2b2-56370d0aeb63"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "첫 번째 문자열 ==>난생처음 파이썬\n",
+            "두 번째 문자열 ==>First Python\n",
+            "두 문자열의 길이 차이는\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(None, -4, '입니다.')"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 2
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "text = \"Python\"\n",
+        "change_text = text[0].lower() + text[1].upper() + text[2].upper() + text[3].upper() + \\\n",
+        "text[4].upper() + text[5].upper()\n",
+        "print(\"원본 문자열은 ==> \", text)\n",
+        "print(\"변환 문자열은 ==> \", change_text)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qr2LxgsWUZFN",
+        "outputId": "0c8621cf-a5fd-4315-9ea4-fba9fc130b0c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "원본 문자열은 ==>  Python\n",
+            "변환 문자열은 ==>  pYTHON\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ss= \"Python\"\n",
+        "print(\"원본 문자열 ==>\", ss)\n",
+        "ss2 = \"\"\n",
+        "ss2 += ss[0].lower()\n",
+        "ss2 += ss[1].upper()\n",
+        "ss2 += ss[2].upper()\n",
+        "ss2 += ss[3].upper()\n",
+        "ss2 += ss[4].upper()\n",
+        "ss2 += ss[5].upper()\n",
+        "\n",
+        "print(\"변환 문자열 ==> \", end =\"\")\n",
+        "print(ss2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "L0ABB9BLUi5P",
+        "outputId": "87f85a91-f25e-41ef-c1d3-619fa8a971ba"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "원본 문자열 ==> Python\n",
+            "변환 문자열 ==> pYTHON\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Ans=int(input('파운드(lb)를 입력 : '));\n",
+        "print('%d파운드(lb)는 %f킬로그램(kg)입니다'%(Ans,Ans*0.453292));\n",
+        "Ans=int(input('킬로그램(kg)를 입력 : '));\n",
+        "print('%d킬로그램(kg)는 %f파운드(lb)입니다'%(Ans,Ans*2.204623));"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XrueLRIKVA-s",
+        "outputId": "937c4126-d48b-4924-86fd-53397669f377"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "파운드(lb)를 입력 : 15\n",
+            "15파운드(lb)는 6.799380킬로그램(kg)입니다\n",
+            "킬로그램(kg)를 입력 : 15\n",
+            "15킬로그램(kg)는 33.069345파운드(lb)입니다\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
